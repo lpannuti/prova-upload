@@ -1,0 +1,116 @@
+title:             "UmbriaFacile - Regione Umbria"
+description:       "Costruiamo insieme il portale dei servizi della P.A. dell'Umbria"
+baseurl:           "/accesso-unico"
+iconsurl:          "/assets/images/icons/"
+url:               "https://lucamariani.github.io/accesso-unico/"
+author:            "Redazione"
+accesso_unico_mail: "accessounico@regione.umbria.it"
+
+custom_css: true
+# define the main black
+main_color: grey-80
+
+# Header data
+header_parent_title: Regione Umbria
+header_parent_url: "http://www.regione.umbria.it"
+header_parent_logo:
+header_language_selector: false
+header_logo:  /assets/images/icons/accesso_unico.png
+header_title: UmbriaFacile
+header_subtitle: Portale dell'Accesso Unico ai servizi delle PA dell'Umbria
+header_slogan: Costruiamo insieme il portale dei servizi delle PA dell'Umbria
+search: false
+search_full_content: false
+mega_menu: true    # if true, require _data/menu.yml
+mega_menu_accedi: true
+header_red_theme: true
+
+# Social profiles
+social_block: true
+social_username: #"&commat;RegioneUmbria"    # short
+medium_username:
+facebook_username: Regione.Umbria.official
+twitter_username:  RegioneUmbria
+youtube_username:
+linkedin_username:
+github_username: Regione-Umbria
+
+# Footer data
+footer_logo: /assets/images/LogoRegioneWhite.png
+footer_title: Regione Umbria
+footer_subtitle: Giunta Regionale
+recapiti1: Agenda Digitale dell’Umbria
+recapiti2: Via Mario Angeloni, 68
+recapiti3: 06100 Perugia
+recapiti4: Centralino (+39) 075.504.1
+email: agndadigitale@regione.umbria.it
+pec:
+privacy_url: http://www.regione.umbria.it/privacy-policy
+note_legali_url: http://www.regione.umbria.it/note-legali
+contatti_url: "contatti"
+
+# Home sections
+links_buttons:
+links_buttons_title:
+posts_list_title: Autem reiciendis post
+posts_list:
+section_lists:
+section_lists_title: Dignissimos recusandae landing
+twitter_list:
+twitter_list_title: Twitter@amministrazione
+links_leads:
+links_leads_title: A est rerum leads
+
+# Build settings
+
+# excludes
+exclude: ["Gemfile", "Gemfile.lock", "README.md", "LICENSE", "DocumentazioneAccessoUnico.md"]
+
+# permalink: /:categories/:title/
+markdown:          kramdown
+paginate:          5
+paginate_path:     "/posts/page:num/"#
+locale: "it-IT"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+collections:
+  docs:
+    output: true
+  pages:
+    output: true
+    permalink: /:path/
+  schede:
+    output: true
+
+defaults:
+# _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      toc: false
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: true
+      related: false
+  # _foo
+  - scope:
+      path: ""
+      type: foo
+    values:
+      layout: single
+
+popup_pratiche_text: "Questo e' un testo di prova per il popup delle pratiche dell'utente privato"
+popup_preferiti_text: "Questo e' un testo di prova per il popup dei preferiti dell'utente privato"
+popup_forum_text: "Questo e' un testo di prova per il popup del forum dell'utente PA"
+popup_aggiornamenti_text: "Questo e' un testo di prova per il popup degli aggiornamenti dell'utente PA"
